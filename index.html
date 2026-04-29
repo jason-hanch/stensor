@@ -1,22 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Stensor | Financial Autopilot</title>
-    <script>
-        // Le robot de Dub ne "voit" pas l'URL Netlify car elle est encodée
-        const secret = "aHR0cHM6Ly9zdGVuc29yLWFwcC5uZXRsaWZ5LmFwcC8=";
-        
-        setTimeout(() => {
-            // Décodage et redirection après 2.5 secondes
-            window.location.href = atob(secret);
-        }, 2500);
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stensor AI | Access Portal</title>
+    <style>
+        body { background: #000; color: #fff; font-family: -apple-system, sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        .card { border: 1px solid #222; padding: 40px; border-radius: 24px; text-align: center; max-width: 400px; }
+        h1 { font-size: 28px; letter-spacing: -1px; margin-bottom: 8px; }
+        p { color: #666; margin-bottom: 32px; font-size: 16px; }
+        .btn { 
+            background: #fff; color: #000; padding: 16px 32px; border-radius: 12px; 
+            text-decoration: none; font-weight: 700; display: block; transition: 0.2s;
+        }
+        .btn:hover { background: #00ff88; transform: scale(1.02); }
+    </style>
 </head>
-<body style="background:#000; color:#fff; display:flex; align-items:center; justify-content:center; height:100vh; font-family:sans-serif;">
-    <div style="text-align:center;">
-        <h1>STENSOR AI</h1>
-        <p>Loading your financial autopilot...</p>
-        <a href="#" onclick="window.location.href=atob(secret)" style="color:#00ff88;">Click here if not redirected</a>
+<body>
+    <div class="card">
+        <h1>Stensor AI</h1>
+        <p>Your financial autopilot is ready. Click below to enter the secure dashboard.</p>
+        
+        <a href="https://stensor-app.netlify.app/" class="btn">Launch Stensor →</a>
     </div>
 </body>
 </html>
